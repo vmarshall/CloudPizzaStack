@@ -1,7 +1,8 @@
 # Cloud Pizza
 
-Deployed State Machine:
+ Deployed State Machine:
 
+```
 {
   "StartAt": "Order Pizza Job",
   "States": {
@@ -66,24 +67,27 @@ Deployed State Machine:
   },
   "TimeoutSeconds": 300
 }
-
+```
 
 ### Added A Few More Typescript Functions to CDK Definition
 
+```
 lambda-fns/lookupAddress.ts
 lambda-fns/cookPizza.ts
 lambda-fns/reportPizzaError.ts
-
+```
 
 ### Added Basic Tests to the-state-machine.test.d.ts
 
+```
 test('Cook Pizza Lambda Created', ( ...
 test('Lookup Address Lambda Created', ( ...
 test('report Pizza Error Lambda Created', (...
-
+```
 
 ### Test new deployment from command line
 
+```
 curl -X "POST" "https://28mgnmyr8k.execute-api.us-west-2.amazonaws.com/accounts/me/integrations/calendar" \
      -H 'Content-Type: text/plain; charset=utf-8' \
      -d $'{
@@ -91,7 +95,11 @@ curl -X "POST" "https://28mgnmyr8k.execute-api.us-west-2.amazonaws.com/accounts/
 	"name": "John Smith"
 }
 
+```
 
+#### RESULT: 
+
+```
 {
   
   "name": "55a579a0-bd9d-403c-b37b-4677ce00fd5a",
@@ -102,7 +110,23 @@ curl -X "POST" "https://28mgnmyr8k.execute-api.us-west-2.amazonaws.com/accounts/
   ...
 }
 
+
+```
+
 OR:
+
+```
+curl -X "POST" "https://28mgnmyr8k.execute-api.us-west-2.amazonaws.com/accounts/me/integrations/calendar" \
+     -H 'Content-Type: text/plain; charset=utf-8' \
+     -d $'{
+    "flavour": "pineapple",
+	"name": "John Smith"
+}
+```
+
+FAIL RESULT:
+
+```
 
 {
   "billingDetails": {
@@ -128,3 +152,5 @@ OR:
   "stopDate": 1.664262316335E9,
   "traceHeader": "Root=1-6332a0ac-9496e57710f24f24d2fa4912;Sampled=1"
 }
+
+```
