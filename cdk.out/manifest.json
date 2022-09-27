@@ -1,0 +1,653 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CloudPizzaStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CloudPizzaStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CloudPizzaStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbd",
+              "id": "2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbd",
+              "packaging": "zip",
+              "sourceHash": "2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbd",
+              "s3BucketParameter": "AssetParameters2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbdS3Bucket40F91345",
+              "s3KeyParameter": "AssetParameters2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbdS3VersionKey7015A410",
+              "artifactHashParameter": "AssetParameters2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbdArtifactHashF4B08D33"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "TheStateMachineStack.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:17:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/pineappleCheckLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "pineappleCheckLambdaHandlerServiceRoleFC4E3211",
+            "trace": [
+              "new Role (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:311:31)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:17:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/pineappleCheckLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "pineappleCheckLambdaHandlerFDB742D5",
+            "trace": [
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:373:35)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:17:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/AssetParameters/2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbd/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbdS3Bucket40F91345",
+            "trace": [
+              "new FileAssetParameters (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "TheStateMachineStack.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:17:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/AssetParameters/2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbd/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbdS3VersionKey7015A410",
+            "trace": [
+              "new FileAssetParameters (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "TheStateMachineStack.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:17:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/AssetParameters/2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbd/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters2be229a0fb25c619f883717fd282942b2cf20568ff809d1a260649f2f1e92dbdArtifactHashF4B08D33",
+            "trace": [
+              "new FileAssetParameters (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "TheStateMachineStack.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:17:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/fetchAddressLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fetchAddressLambdaHandlerServiceRoleABF3958B",
+            "trace": [
+              "new Role (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:311:31)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:23:30)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/fetchAddressLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fetchAddressLambdaHandlerD234B963",
+            "trace": [
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:373:35)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:23:30)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/fetchCookPizzaLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fetchCookPizzaLambdaHandlerServiceRole80A8783A",
+            "trace": [
+              "new Role (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:311:31)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:29:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/fetchCookPizzaLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fetchCookPizzaLambdaHandlerC1F2CCB9",
+            "trace": [
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:373:35)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:29:32)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/reportPizzaErrorLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "reportPizzaErrorLambdaHandlerServiceRole859AA7B0",
+            "trace": [
+              "new Role (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:311:31)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:35:34)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/reportPizzaErrorLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "reportPizzaErrorLambdaHandlerBD1BF786",
+            "trace": [
+              "new Function (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-lambda/lib/function.ts:373:35)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:35:34)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/StateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StateMachineRoleB840431D",
+            "trace": [
+              "new Role (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new StateMachine (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-stepfunctions/lib/state-machine.ts:264:31)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:73:24)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/StateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StateMachineRoleDefaultPolicyDF1E6607",
+            "trace": [
+              "new Policy (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "StateMachine.addToRolePolicy (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-stepfunctions/lib/state-machine.ts:304:15)",
+              "StateMachine.buildTracingConfiguration (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-stepfunctions/lib/state-machine.ts:346:10)",
+              "new StateMachine (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-stepfunctions/lib/state-machine.ts:279:57)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:73:24)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/StateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StateMachine2E01A3A5",
+            "trace": [
+              "new StateMachine (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-stepfunctions/lib/state-machine.ts:273:22)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:73:24)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/HttpApiRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HttpApiRole79B5C31A",
+            "trace": [
+              "new Role (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:87:25)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/the-state-machine-api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "thestatemachineapi69C81CC4",
+            "trace": [
+              "new HttpApi (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:283:22)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:102:17)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/the-state-machine-api/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "thestatemachineapiDefaultStageE23A2C15",
+            "trace": [
+              "new HttpStage (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/stage.ts:107:5)",
+              "new HttpApi (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:301:27)",
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:102:17)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/Integ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Integ",
+            "trace": [
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:107:19)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DefaultRoute",
+            "trace": [
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:121:5)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/HTTP API Url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HTTPAPIUrl",
+            "trace": [
+              "new TheStateMachineStack (/Users/vmarshall/Development/pizza/the-state-machine/lib/the-state-machine-stack.ts:128:5)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/bin/the-state-machine.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1310:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/index.ts:1313:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:331:12)",
+              "Object.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/ts-node/src/bin.ts:482:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:642:26)",
+              "process.emit (node:events:527:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@cspotcode/source-map-support/source-map-support.js:527:35)",
+              "process.emit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/CloudPizzaStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:642:26)",
+              "process.emit (node:events:527:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/@cspotcode/source-map-support/source-map-support.js:527:35)",
+              "process.emit (/Users/vmarshall/Development/pizza/the-state-machine/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CloudPizzaStack"
+    }
+  }
+}
